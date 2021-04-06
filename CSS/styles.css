@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Satisfy&display=swap");
+@import "reset.css";
+@import "status-bar.css";
+@import "variables.css";
+
+body {
+  font-family: "Satisfy", cursive;
+}
+
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcom-header__title {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.wlecom-header__text {
+  width: 60%;
+  opacity: 0.5;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 15px 0px;
+  font-size: 18px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  color: rgb(0, 0, 0, 0.3);
+}
+
+input:focus {
+  outline: none;
+}
+
+#login-form input:focus {
+  border-color: var(--yellow);
+}
