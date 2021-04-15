@@ -1,7 +1,11 @@
 .nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #F9F9FA;
-    padding: 20px 40px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px 50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
 }
 
 .nav__list {
@@ -10,5 +14,5 @@
 }
 
 .nav__link {
-    color: inherit;
+    color: #2e363e;
 }
