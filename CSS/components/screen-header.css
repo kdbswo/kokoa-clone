@@ -29,3 +29,14 @@
 .screen-header__icons .fa-cog:hover {
     animation: rotateCog 1s linear infinite;
 }
+
+.screen-header__ellipsis {
+    display: flex;
+    background-color: tomato;
+    width: 5px;
+    height: 5px;
+    border-radius: 2.5px;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}

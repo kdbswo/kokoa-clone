@@ -23,8 +23,8 @@
 
 @keyframes fadeIn {
     from{
-        opacity: 0;
         transform: translateY(30px);
+        opacity: 0;
     }
     to {
         
@@ -52,10 +52,25 @@
     margin-bottom: 25px;
 }
 
+@keyframes chatfadeIn {
+    from{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    to {
+        
+        transform: none;
+        opacity: 1;
+    }
+
+
+}
+
 .message-row {
     width:100%;
     display: flex;
     margin-bottom: 25px;
+    animation: chatfadeIn 0.8s linear;
 }
 
 .message-row img {
@@ -90,8 +105,20 @@
     font-size: 15px;
 }
 
+@keyframes chatfadeIns {
+    from{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to {
+        
+        transform: none;
+        opacity: 1;
+    }
+}
 .message-row--own {
     justify-content: flex-end;
+    animation: chatfadeIns 0.8s linear;
 }
 
 .message-row--own .message__bubble {
@@ -133,30 +160,31 @@
 }
 
 .reply input {
-    padding: 12px;
+    padding: 14px;
     width: 100%;
     border: var(--main-border);
-    border-radius: 20px;
+    border-radius: 25px;
+    box-sizing: border-box;
     transition: all 0.3s ease-in-out;
 }
 
 .reply__column:last-child > i,
 .reply__column:last-child button {
     position: absolute;
-    right: -3px;
-    top: 2px;
+    right: 3px;
+    top: 3px;
 }
 
 .reply__column:last-child > i {
-    right: 40px;
-    top: 10px;
+    right: 50px;
+    top: 15px;
 }
 
 .reply__column button {
     background-color: var(--yellow);
     border: none;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -172,14 +200,14 @@
 
 
 .reply .reply__column:first-child,
-.reply .fa-smile-wink,
+.reply .fa-grin,
 .reply button {
-    opacity: 0;
+    transition:  opacity 0.3s ease-in-out;
 }
 
 
 .reply:focus-within .reply__column:first-child,
-.reply:focus-within .fa-smile-wink,
+.reply:focus-within .fa-grin,
 .reply:focus-within button {
     opacity: 0;
 }
@@ -191,4 +219,19 @@
 
 .reply:focus-within {
     transform: translateY(80px);
+}
+
+@keyframes imgMove {
+    from {
+        transform: none;
+    }
+    
+    to {
+        
+        transform: rotateY(360deg);
+    }
+}
+
+.chat-img {
+    animation: imgMove 1s linear;
 }

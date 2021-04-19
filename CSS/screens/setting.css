@@ -16,3 +16,7 @@
 .settings__setting-column:last-child {
     opacity: 0.5;
 }
+
+.setting-header {
+    padding-top: 40px;
+}
