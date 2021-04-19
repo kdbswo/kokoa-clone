@@ -17,10 +17,15 @@
     margin-top: 18px;
 }
 
+
 .icon-row-second {
     justify-content: baseline;
 }
 
 .icon-row-margin {
     margin-right: 290px;
+}
+.icon-hidden {
+    visibility: hidden;
+
 }
