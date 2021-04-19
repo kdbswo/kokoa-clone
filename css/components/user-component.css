@@ -13,6 +13,7 @@
     height: 70px;
     border-radius: 30px;
     margin-right: 20px;
+    
 }
 
 .user-component__title {
@@ -51,4 +52,8 @@
 .user-component-time {
     margin-bottom: 10px;
     display: block;
+}
+
+.user-component__column {
+    margin-bottom: 30px;
 }
