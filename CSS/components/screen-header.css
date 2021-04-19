@@ -4,7 +4,7 @@
     align-items: center;
     padding: var(--horizontal-space);
     padding-top: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .screen-header__title {
@@ -13,5 +13,19 @@
 }
 
 .screen-header__icons span {
-    margin-left: 15px;
+    margin-left: 25px;
+}
+
+@keyframes rotateCog {
+    from {
+        transform: rotate(0deg);
+
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover {
+    animation: rotateCog 1s linear infinite;
 }
